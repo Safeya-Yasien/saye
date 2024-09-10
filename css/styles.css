@@ -194,8 +194,11 @@ footer {
       transition: var(--main-transition);
     }
     .link-body-emphasis:hover {
-      background-color: red;
+      background-color: #f6fb7a;
       transform: translateY(-10px);
+    }
+    .link-body-emphasis:hover svg {
+      color: var(--black-color);
     }
   }
 }
