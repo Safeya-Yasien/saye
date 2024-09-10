@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سعي | تسجيل</title>
+    <link href="../css/bootstrap.rtl.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../style/login.css">
+
+</head>
+<body>
+    <!-- Start of Header -->
+    <header>
+        <nav>
+            <img src="../image/logo.png" alt="logo" class="logo">
+            <ul>
+                <Li>الرئيسية</Li>
+            </ul>
+        </nav>
+    </header>
+    <!-- End of Header -->
+    <div class="container">
+        <div class="login">
+            <div class="row">
+                <div class="col-md-6">
+                    <form>
+                        <h1> مرحبا !</h1>
+                        <input type="email" placeholder="البريد الالكتروني" required><br>
+                        <input type="password" placeholder="كلمة المرور" required><br>
+                        <a href="#">هل نسيت كلمة المرور..؟</a><br>
+                        <a href="#">مشترك جديد؟</a><br>
+                        <button type="submit">دخول</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <img src="../image/image_processing20200121-30457-djhwgv-removebg-preview.png" alt="register" width="400">
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--start script-->
+    <script>
+        // JavaScript to handle the login form validation
+document.addEventListener('DOMContentLoaded', function () {
+    // Select the form and add a submit event listener
+    const form = document.querySelector('form');
+
+    form.addEventListener('submit', function (event) {
+        // Prevent form submission for validation
+        event.preventDefault();
+
+        // Get the email and password inputs
+        const email = document.querySelector('input[type="email"]').value;
+        const password = document.querySelector('input[type="password"]').value;
+
+        // Basic validation for email and password fields
+        if (validateEmail(email) && validatePassword(password)) {
+            alert('تم تسجيل الدخول بنجاح!');
+            // You can now proceed with form submission, API call, or redirect
+            // form.submit();
+        } else {
+            alert('يرجى إدخال البريد الإلكتروني وكلمة المرور بشكل صحيح.');
+        }
+    });
+
+    // Email validation function
+    function validateEmail(email) {
+        const emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,6}$/;
+        return emailPattern.test(email);
+    }
+
+    // Password validation function (example: check if it's at least 6 characters)
+    function validatePassword(password) {
+        return password.length >= 6;
+    }
+});
+
+    </script>
+    <!--end script-->
+</body>
+</html>
