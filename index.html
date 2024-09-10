@@ -7,6 +7,13 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +23,85 @@
     />
   </head>
   <body>
-    <header></header>
+    <header>
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary position-fixed w-100 z-3"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="/">شعار</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="تبديل التنقل"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >الرئيسية</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">مبادراتنا</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">فرص التطوع</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">التبرعات</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">اتصل بنا</a>
+              </li>
+            </ul>
+            <a class="btn ms-3" href="#">تسجيل الدخول</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <section class="about-us section-padding">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div>
+              <img
+                src="assets/imgs/aboutPage/vision.jpg"
+                alt="mission"
+                loading="lazy"
+              />
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="about-txt">
+              <h3 class="section-title mb-4">
+                عن جمعية <span class="color">سعى</span>
+              </h3>
+              <p>
+                جمعية سعى هي منظمة غير ربحية تهدف إلى تحقيق التغيير الإيجابي في
+                المجتمع من خلال العمل التطوعي والمبادرات الإنسانية. تأسست
+                الجمعية في بدايات القرن العشرين، ومنذ ذلك الحين ونحن نعمل جاهدين
+                لتحقيق الأهداف الإنسانية ودعم القضايا الاجتماعية المهمة.
+              </p>
+              <ul>
+                <li>تقديم الدعم والمساعدة للأفراد والمجتمعات المحتاجة</li>
+                <li>
+                  تنظيم ورش عمل ومبادرات لتوعية المجتمع وتعليم المهارات الحياتية
+                </li>
+                <li>تشجيع العمل التطوعي والمشاركة الفعالة في قضايا المجتمع</li>
+              </ul>
+              <a href="#" class="btn">انضم إلينا</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <footer class="pt-5 pb-2">
       <div class="container">
@@ -28,87 +113,88 @@
             >
               <img
                 src="assets/imgs/logo.svg"
-                alt="logo"
+                alt="شعار"
                 width="120"
                 height="120"
               />
             </a>
-            <p class="">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            <p>
+              نعمل بجد لتقديم الدعم والمساعدة لمجتمعاتنا وتحقيق تأثير إيجابي
+              مستدام.
             </p>
             <ul class="contact-info d-flex flex-column gap-3 mt-4">
               <li class="d-flex">
                 <span class="icon">
                   <i class="fa-solid fa-phone"></i>
                 </span>
-                <span> Hello@Email.co </span>
+                <span>info@domain.com</span>
               </li>
               <li>
                 <span class="icon">
                   <i class="fa-solid fa-envelope"></i>
                 </span>
-                <span>+44 123 456 789</span>
+                <span>+20 123 456 789</span>
               </li>
             </ul>
           </div>
 
           <div class="col-sm-4 col-md-6 col-lg-3 mb-3">
-            <h5>Section</h5>
+            <h5>روابط سريعة</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Home</a>
+                <a href="#" class="nav-link p-0">الرئيسية</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Features</a>
+                <a href="#" class="nav-link p-0">المميزات</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Pricing</a>
+                <a href="#" class="nav-link p-0">الأسعار</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">FAQs</a>
+                <a href="#" class="nav-link p-0">الأسئلة الشائعة</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">About</a>
+                <a href="#" class="nav-link p-0">من نحن</a>
               </li>
             </ul>
           </div>
 
           <div class="col-sm-4 col-md-6 col-lg-3 mb-3">
-            <h5>Section</h5>
+            <h5>روابط سريعة</h5>
             <ul class="nav flex-column">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Home</a>
+                <a href="#" class="nav-link p-0">الرئيسية</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Features</a>
+                <a href="#" class="nav-link p-0">المميزات</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">Pricing</a>
+                <a href="#" class="nav-link p-0">الأسعار</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">FAQs</a>
+                <a href="#" class="nav-link p-0">الأسئلة الشائعة</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0">About</a>
+                <a href="#" class="nav-link p-0">من نحن</a>
               </li>
             </ul>
           </div>
 
           <div class="col-sm-12 col-md-6 col-lg-3 mb-3">
             <form>
-              <h5>Subscribe to our newsletter</h5>
-              <p>Monthly digest of what's new and exciting from us.</p>
+              <h5>اشترك في نشرتنا الإخبارية</h5>
+              <p>احصل على ملخص شهري لأحدث الأخبار والتحديثات مننا.</p>
               <div class="d-flex flex-column flex-sm-row w-100 gap-2">
                 <label for="newsletter1" class="visually-hidden"
-                  >Email address</label
+                  >البريد الإلكتروني</label
                 >
                 <input
                   id="newsletter1"
                   type="text"
                   class="form-control"
-                  placeholder="Email address"
+                  placeholder="البريد الإلكتروني"
                 />
-                <button class="btn" type="button">Subscribe</button>
+                <button class="btn" type="button">اشترك</button>
               </div>
             </form>
           </div>
@@ -117,22 +203,22 @@
         <div
           class="d-flex flex-column flex-sm-row justify-content-between pt-4 mt-4 border-top rights"
         >
-          <p>© 2024 Company, Inc. All rights reserved.</p>
+          <p>© 2024 الشركة، جميع الحقوق محفوظة.</p>
           <ul class="list-unstyled d-flex">
             <li>
-              <a class="link-body-emphasis" href="#"
-                ><i class="fa-brands fa-x-twitter"></i
-              ></a>
-            </li>
-            <li class="ms-3">
-              <a class="link-body-emphasis" href="#"
-                ><i class="fa-brands fa-instagram"></i
-              ></a>
-            </li>
-            <li class="ms-3">
               <a class="link-body-emphasis" href="#">
-                <i class="fa-brands fa-facebook"></i
-              ></a>
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a class="link-body-emphasis" href="#">
+                <i class="fa-brands fa-instagram"></i>
+              </a>
+            </li>
+            <li class="me-3">
+              <a class="link-body-emphasis" href="#">
+                <i class="fa-brands fa-facebook"></i>
+              </a>
             </li>
           </ul>
         </div>
