@@ -5,9 +5,10 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: system-ui;
   /* background-color: #f1f1f1; */
   overflow-x: hidden;
+  direction: rtl;
 }
 ul {
   list-style: none;
@@ -37,6 +38,10 @@ footer {
   }
   .nav-link {
     color: #ffffffd4;
+    transition: var(--main-transition);
+  }
+  .nav-link:hover {
+    color: #f6fb7a;
   }
   .link-body-emphasis + p {
     color: #ffffffd4;
@@ -45,7 +50,7 @@ footer {
     li {
       color: #ffffffd4;
       .icon {
-        margin-right: 10px;
+        margin-left: 10px;
       }
     }
   }
@@ -69,6 +74,15 @@ footer {
     }
     .form-control::placeholder {
       color: #ffffffd4;
+    }
+    .btn {
+      background-color: var(--main-color);
+      color: var(--white-color);
+      border-radius: 50px;
+      transition: var(--main-transition);
+    }
+    .btn:hover {
+      background-color: var(--btn-hover-color);
     }
   }
   .rights {
