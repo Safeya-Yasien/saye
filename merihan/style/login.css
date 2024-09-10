@@ -1,0 +1,167 @@
+/* General styling for the body and font */
+body {
+    font-family: 'Cairo', sans-serif;
+    background-image: url(../image/background2.png);   
+     margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Allows the header and content to stack */
+    direction: rtl;
+    padding-top: 80px; /* Creates space for the fixed header */
+}
+
+/* Header styling */
+header {
+    width: 100%;
+    background-color: #B4E380;
+    padding: 10px 0;
+    position: fixed; /* Keeps the header at the top */
+    top: 0;
+    right: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.logo {
+    width: 50px; 
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    position: absolute; 
+    right: 70px; 
+    top: 50%; 
+    transform: translateY(-50%); 
+}
+
+ul li {
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    text-align: right;
+    
+}
+
+ul li:hover {
+    color: #f0c040;
+}
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+    }
+
+    ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* Centering the login container */
+.container {
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin-top: 20px; /* Adds space between the header and form */
+}
+
+/* Login form styling */
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+form {
+    padding: 20px;
+    text-align: right;
+}
+
+form h1 {
+    color: #0C3803;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input fields styling */
+input[type="email"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+/* Placeholder styling */
+input::placeholder {
+    text-align: right;
+    color: #0C3803;
+    font-weight: 800;
+}
+
+/* Button styling */
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #88D66C;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: green;
+}
+
+/* Anchor links styling */
+a {
+    color: #0C3803;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Image styling */
+img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+    .login {
+        flex-direction: column;
+    }
+
+    .col-md-6 {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
