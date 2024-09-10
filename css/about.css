@@ -30,7 +30,7 @@
     font-size: 18px;
     margin-bottom: 30px;
   }
-  
+
   .image {
     position: absolute;
     top: 0;
@@ -44,12 +44,13 @@
   .service-item {
     text-align: center;
     padding: 45px 20px 30px;
-    background-color: #fffcf4;
+    background-color: var(--bg-green-color);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+    border-color: #f6fb7a !important;
     .icon {
       transition: var(--main-transition);
       font-size: 40px;
@@ -77,7 +78,7 @@
     background: var(--white-color);
     padding: 30px;
     margin-bottom: 45px;
-    border: 1px solid #ededed;
+    border: 1px solid var(--border-color);
     border-radius: 4px;
     position: relative;
     .history-text {
@@ -100,7 +101,7 @@
     height: 0;
     border-style: solid;
     border-width: 20px 20px 0 20px;
-    border-color: #ededed transparent transparent transparent;
+    border-color: var(--border-color) transparent transparent transparent;
     transition: 0.3s;
   }
   .history-wrapper::after {
@@ -117,7 +118,7 @@
     transition: 0.3s;
   }
   .history-line {
-    border: 1px solid #ededed;
+    border: 1px solid var(--border-color);
     position: relative;
     top: 4px;
   }
@@ -129,7 +130,7 @@
     top: -20px;
     bottom: auto;
     border-width: 0 20px 20px 20px;
-    border-color: transparent transparent #ededed transparent;
+    border-color: transparent transparent var(--border-color) transparent;
   }
   .bottom-content::after {
     top: -54px;
@@ -146,7 +147,7 @@
       bottom: -20px;
       top: auto;
       border-width: 20px 20px 0 20px;
-      border-color: #ededed transparent transparent transparent;
+      border-color: var(--border-color) transparent transparent transparent;
     }
     .history-line {
       display: none;
