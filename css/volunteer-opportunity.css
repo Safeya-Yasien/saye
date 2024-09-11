@@ -1,0 +1,58 @@
+/* Testimonials Styles */
+.volunteer-opportunities,
+.volunteer-registration {
+  background-color: #f9f9f9;
+}
+
+.volunteer-opportunity {
+  background-color: var(--white-color);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  a {
+    transition: var(--main-transition);
+  }
+  a:hover {
+    color: var(--main-color);
+  }
+}
+
+.volunteer-benefits ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 20px;
+  li {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+  }
+}
+
+.volunteer-registration {
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .volunteer-benefits li,
+  .volunteer-registration li {
+    font-size: 1rem;
+  }
+}
