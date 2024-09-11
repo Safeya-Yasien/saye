@@ -122,6 +122,37 @@ header {
   }
 }
 
+.how-it-works {
+  background-color: #f7f9fa;
+  text-align: center;
+  padding: 50px 0;
+
+  .step {
+    padding: 20px;
+    background-color: var(--white-color);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .icon {
+      margin-bottom: 20px;
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+    h3 {
+      font-size: 24px;
+      margin-bottom: 15px;
+      color: var(--main-color);
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #555;
+  }
+}
+
 footer {
   background-color: #232020;
   margin-top: 100px;
