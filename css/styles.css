@@ -294,7 +294,7 @@ footer {
       background-color: #f6fb7a;
       transform: translateY(-10px);
     }
-    .link-body-emphasis:hover svg {
+    .link-body-emphasis:hover i {
       color: var(--black-color);
     }
   }
