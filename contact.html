@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>نموذج تواصل معنا</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
+</head>
+<body>
+    <div class="container">
+        <div class="contact-form">
+            <div class="row">
+                <!-- Left Section for Branding or Additional Content -->
+                <div class="col-lg-6 col-md-6 left-section">
+                    <h1>نحن هنا لمساعدتك!</h1>
+                    <p>لا تتردد في التواصل معنا. نحن نسعى لتقديم أفضل خدمة ممكنة.</p>
+                </div>
+
+                <!-- Right Section with the Form -->
+                <div class="col-lg-6 col-md-6">
+                    <form action="/submit-registration" method="post" role="form" class="form-horizontal">
+                        <!-- Form Header with Icon -->
+                        <div class="form-header text-center mb-4">
+                            <a href="#"><i class="fa-solid fa-house-chimney fa-2x"></i></a>
+                        </div>
+
+                        <!-- Form Body -->
+                        <div class="form-body">
+                            <h3>تواصل معنا</h3>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="fname">الاسم بالكامل</label>
+                                <input type="text" required class="form-control" aria-label="Full name" id="fname" placeholder="أدخل اسمك الكامل">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="email">البريد الإلكتروني</label>
+                                <input type="email" required class="form-control" aria-label="Email" id="email" placeholder="أدخل بريدك الإلكتروني">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="phone">رقم الهاتف</label>
+                                <input type="tel" required class="form-control" aria-label="Phone" id="phone" placeholder="أدخل رقم هاتفك">
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label" for="message">رسالتك</label>
+                                <textarea class="form-control" required aria-label="Message" id="message" rows="5" placeholder="أدخل رسالتك"></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn btn-primary w-100">إرسال</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Load Bootstrap JS (Optional for form interactions, modals, etc.) -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+
+<!--script-->
+<script>
+
+</script>
+
+
+
+
+</body>
+</html>

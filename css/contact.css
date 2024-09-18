@@ -1,0 +1,116 @@
+/* General Reset */
+body {
+    background-image: url('../assets/imgs/registerpage/background2.png');
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container and Layout */
+.container {
+    height: 650px;
+    width: 950px;
+    padding: 50px 0;
+}
+
+/* Left Section Styles */
+.left-section {
+    background-image: url('../assets/imgs/registerpage/contact.jpg'); /* Replace with your image path */
+    background-size: cover; /* Ensures the image covers the entire section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    color: white; /* Makes the text color white for better readability over the image */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    min-height: 100%; /* Ensures the section has a full height */
+}
+
+/* Additional styling to improve text readability over the image */
+.left-section h1, 
+.left-section p {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6); /* Adds a shadow to the text for better contrast */
+}
+
+/* Optionally, if the image is too bright or dark, you can use an overlay */
+.left-section::before {
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay to improve text readability */
+    z-index: 1;
+}
+
+.left-section h1, 
+.left-section p {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* Right Section (Form) */
+.form-header a {
+    color: #333;
+    text-decoration: none;
+}
+
+.form-header a:hover {
+    color: #0f4503;
+}
+
+/* Form Layout */
+.form-body {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+textarea.form-control {
+    resize: none;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #0C3803;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0f4503;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    .left-section {
+        margin-bottom: 30px;
+    }
+
+    .form-body {
+        padding: 20px;
+    }
+}
