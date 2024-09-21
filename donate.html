@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تبرع</title>
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/donate.css">
+
+</head>
+<body>
+
+    <!--start Hero section-->
+    <div class="landing">
+        <div class="overlay"></div>
+        <div class="contant">
+            <div class="text">
+                <h2>ساهم في صنع الفرق اليوم</h2>
+                <p>تبرع الآن وكن سببًا في إحداث تغيير إيجابي في حياة الآخرين.</p>
+                <a href="#" class="main-btn">تبرع الآن</a>
+            </div>
+        </div>
+    </div>
+    <!--end Hero section-->
+
+    <!--start Donation Options Section-->
+    <section class="donate">
+    <div class="container">
+        <div class="donate-plan">
+            <div class="row">
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-outline-success donate-frequency" id="onceBtn">مرة واحدة</button>
+                </div>
+                <div class="col-sm-6">
+                    <button type="button" class="btn btn-outline-success donate-frequency" id="monthlyBtn">شهري</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Optional Prices -->
+        <div class="prices-group">
+            <label>
+                <input type="radio" name="donation-amount" class="donation-amount" value="50"> 50 جنيه
+            </label>
+            <label>
+                <input type="radio" name="donation-amount" class="donation-amount" value="100"> 100 جنيه
+            </label>
+            <label>
+                <input type="radio" name="donation-amount" class="donation-amount" value="200"> 200 جنيه
+            </label>
+        </div>
+
+        
+
+        <div class="mb-3 text-center">
+            <input type="text" class="form-control w-50 mx-auto" name="company" id="company" placeholder="ابحث عن شركة">
+        </div>
+    </div>
+    <!--end Donation Options Section-->
+
+    <!--start Donation Form-->
+    <div class="donation-form container">
+        <form id="donationForm">
+            <!-- الاسم الكامل -->
+            <div class="form-group">
+                <label for="name">الاسم الكامل:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+
+            <!-- البريد الإلكتروني -->
+            <div class="form-group">
+                <label for="email">البريد الإلكتروني:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+
+            <!-- رقم الهاتف -->
+            <div class="form-group">
+                <label for="phone">رقم الهاتف:</label>
+                <input type="tel" class="form-control" id="phone" name="phone" required>
+            </div>
+
+            <!-- مبلغ التبرع -->
+            <div class="form-group">
+                <label for="amount">مبلغ التبرع (بالجنيه):</label>
+                <input type="number" class="form-control" id="amountInput" name="amount" min="1" required>
+            </div>
+
+            <!-- طرق الدفع -->
+            <div class="form-group">
+                <label for="payment-method">طريقة الدفع:</label>
+                <select id="payment-method" class="form-control" name="payment-method" required>
+                    <option value="">اختر طريقة الدفع</option>
+                    <option value="credit-card">بطاقة ائتمان</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="vodafone-cash">فودافون كاش</option>
+                </select>
+            </div>
+
+            <!-- زر الإرسال -->
+            <button type="submit" class="submit-btn">تبرع الآن</button>
+        </form>
+    </div>
+</section>
+    <!--end Donation Form-->
+<!--script-->
+<script>
+// Toggle active class for donation frequency buttons
+const onceBtn = document.getElementById('onceBtn');
+const monthlyBtn = document.getElementById('monthlyBtn');
+const donationForm = document.getElementById('donationForm');
+
+onceBtn.addEventListener('click', function() {
+    onceBtn.classList.add('active');
+    monthlyBtn.classList.remove('active');
+});
+
+monthlyBtn.addEventListener('click', function() {
+    monthlyBtn.classList.add('active');
+    onceBtn.classList.remove('active');
+});
+
+// Update donation amount based on selected radio button or custom input
+const donationAmountRadios = document.querySelectorAll('.donation-amount');
+const amountInput = document.getElementById('amountInput');
+
+donationAmountRadios.forEach(radio => {
+    radio.addEventListener('change', function() {
+        if (radio.checked) {
+            amountInput.value = radio.value;
+        }
+    });
+});
+
+// Form validation and submission
+donationForm.addEventListener('submit', function(event) {
+    // Prevent form submission if inputs are invalid
+    if (!donationForm.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+    }
+    donationForm.classList.add('was-validated');
+});
+
+// Real-time validation for phone and email
+const emailInput = document.getElementById('email');
+const phoneInput = document.getElementById('phone');
+
+emailInput.addEventListener('input', function() {
+    if (!emailInput.validity.valid) {
+        emailInput.setCustomValidity('يرجى إدخال بريد إلكتروني صحيح.');
+    } else {
+        emailInput.setCustomValidity('');
+    }
+});
+
+phoneInput.addEventListener('input', function() {
+    if (!/^\d+$/.test(phoneInput.value)) {
+        phoneInput.setCustomValidity('يرجى إدخال رقم هاتف صحيح.');
+    } else {
+        phoneInput.setCustomValidity('');
+    }
+});
+
+
+</script>
+</body>
+</html>
