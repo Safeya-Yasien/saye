@@ -65,7 +65,7 @@
                 <a class="nav-link" href="#">التبرعات</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">اتصل بنا</a>
+                <a class="nav-link" href="contact.html">اتصل بنا</a>
               </li>
             </ul>
             <a class="btn ms-3" href="login.html">تسجيل الدخول</a>
@@ -104,6 +104,13 @@
                 انضم إلى فريقنا في مشروع التوعية الصحية وتساعد في نشر الوعي حول
                 الصحة والتغذية السليمة.
               </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
             </div>
           </div>
           <div class="col-md-4">
@@ -113,6 +120,13 @@
                 ساهم في تحسين مستوى التعليم للأطفال من خلال تقديم الدروس
                 والمساعدة في الواجبات المدرسية.
               </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
             </div>
           </div>
           <div class="col-md-4">
@@ -122,11 +136,166 @@
                 ساعدنا في تنظيم فعاليات لجمع التبرعات لدعم مشاريعنا ومبادراتنا
                 المختلفة.
               </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="volunteer-opportunity">
+              <a class="h4 d-block mb-4" href="#">توعية المجتمع</a>
+              <p>
+                شارك في تنظيم حملات توعية للمجتمع حول القضايا المهمة وطرق
+                المساهمة في الحلول.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="volunteer-opportunity">
+              <a class="h4 d-block mb-4" href="#">مشروع النظافة العامة</a>
+              <p>
+                شارك في جهود تنظيف الأحياء والشوارع لتعزيز الوعي البيئي والحفاظ
+                على النظافة.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="volunteer-opportunity">
+              <a class="h4 d-block mb-4" href="#">دعم كبار السن</a>
+              <p>
+                انضم إلى فريقنا لمساعدة كبار السن من خلال تقديم الرعاية
+                والمساعدة في حياتهم اليومية.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="volunteer-opportunity">
+              <a class="h4 d-block mb-4" href="#">حماية البيئة</a>
+              <p>
+                ساعد في جهود حماية البيئة من خلال غرس الأشجار والمشاركة في حملات
+                التوعية البيئية.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="volunteer-opportunity">
+              <a class="h4 d-block mb-4" href="#">التدريب المهني</a>
+              <p>
+                انضم إلينا لتقديم دورات تدريبية في مجالات مهنية متعددة لتطوير
+                مهارات الشباب.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="volunteer-opportunity">
+              <a class="h4 d-block mb-4" href="#">الدعم النفسي والاجتماعي</a>
+              <p>
+                قدم الدعم النفسي والاجتماعي للفئات المحتاجة لمساعدتهم على التغلب
+                على الصعوبات.
+              </p>
+              <button
+                class="btn btn-primary"
+                data-bs-toggle="modal"
+                data-bs-target="#volunteerFormModal"
+              >
+                تقديم
+              </button>
             </div>
           </div>
         </div>
       </div>
     </section>
+
+    <div
+      class="modal fade"
+      id="volunteerFormModal"
+      tabindex="-1"
+      aria-labelledby="volunteerFormModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="volunteerFormModalLabel">
+              نموذج التقديم
+            </h5>
+            <button
+              type="button"
+              class="btn-close ms-0 me-auto"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="mb-3">
+                <label for="name" class="form-label">الاسم الكامل</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label">البريد الإلكتروني</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label for="phone" class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" id="phone" required />
+              </div>
+              <div class="mb-3">
+                <label for="volunteerOpportunities" class="form-label"
+                  >اختر فرصة التطوع</label
+                >
+                <select class="form-select" id="volunteerOpportunities">
+                  <option value="health">مشروع التوعية الصحية</option>
+                  <option value="education">برنامج التعليم</option>
+                  <option value="fundraising">جمع التبرعات</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-primary">إرسال</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="volunteer-benefits section-padding">
       <div class="container">
