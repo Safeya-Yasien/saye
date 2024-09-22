@@ -62,7 +62,6 @@
         <div class="text">
           <h2>ساهم في صنع الفرق اليوم</h2>
           <p>تبرع الآن وكن سببًا في إحداث تغيير إيجابي في حياة الآخرين.</p>
-          <a href="#" class="main-btn">تبرع الآن</a>
         </div>
       </div>
     </div>
@@ -126,14 +125,15 @@
         </div>
 
         <div class="mb-3 text-center">
-          <input
-            type="text"
-            class="form-control w-50 mx-auto"
-            name="company"
-            id="company"
-            placeholder="ابحث عن شركة"
-          />
-        </div>
+          <select class="form-control w-50 mx-auto" name="company" id="company" required>
+              <option value="">اختر شركة</option>
+              <option value="company1">رسالة </option>
+              <option value="company2">صناع الحياة </option>
+              <option value="company3">بنك الطعام المصري </option>
+              <option value="company4">بهية </option>
+          </select>
+      </div>
+      
       </div>
       <!--end Donation Options Section-->
 
@@ -148,6 +148,8 @@
               class="form-control"
               id="name"
               name="name"
+              placeholder="الاسم الكامل"
+
               required
             />
           </div>
@@ -160,6 +162,8 @@
               class="form-control"
               id="email"
               name="email"
+              placeholder="البريد الالكتروني"
+
               required
             />
           </div>
@@ -168,10 +172,12 @@
           <div class="form-group">
             <label for="phone">رقم الهاتف:</label>
             <input
-              type="tel"
+              type="text"
               class="form-control"
               id="phone"
               name="phone"
+              placeholder="رقم الهاتف "
+
               required
             />
           </div>
@@ -185,6 +191,8 @@
               id="amountInput"
               name="amount"
               min="1"
+              placeholder="جنيها مصريا.... "
+
               required
             />
           </div>
@@ -338,64 +346,7 @@
       </footer>
     
     <!--script-->
-    <script>
-      // Toggle active class for donation frequency buttons
-      const onceBtn = document.getElementById("onceBtn");
-      const monthlyBtn = document.getElementById("monthlyBtn");
-      const donationForm = document.getElementById("donationForm");
-
-      onceBtn.addEventListener("click", function () {
-        onceBtn.classList.add("active");
-        monthlyBtn.classList.remove("active");
-      });
-
-      monthlyBtn.addEventListener("click", function () {
-        monthlyBtn.classList.add("active");
-        onceBtn.classList.remove("active");
-      });
-
-      // Update donation amount based on selected radio button or custom input
-      const donationAmountRadios =
-        document.querySelectorAll(".donation-amount");
-      const amountInput = document.getElementById("amountInput");
-
-      donationAmountRadios.forEach((radio) => {
-        radio.addEventListener("change", function () {
-          if (radio.checked) {
-            amountInput.value = radio.value;
-          }
-        });
-      });
-
-      // Form validation and submission
-      donationForm.addEventListener("submit", function (event) {
-        // Prevent form submission if inputs are invalid
-        if (!donationForm.checkValidity()) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        donationForm.classList.add("was-validated");
-      });
-
-      // Real-time validation for phone and email
-      const emailInput = document.getElementById("email");
-      const phoneInput = document.getElementById("phone");
-
-      emailInput.addEventListener("input", function () {
-        if (!emailInput.validity.valid) {
-          emailInput.setCustomValidity("يرجى إدخال بريد إلكتروني صحيح.");
-        } else {
-          emailInput.setCustomValidity("");
-        }
-      });
-
-      phoneInput.addEventListener("input", function () {
-        if (!/^\d+$/.test(phoneInput.value)) {
-          phoneInput.setCustomValidity("يرجى إدخال رقم هاتف صحيح.");
-        } else {
-          phoneInput.setCustomValidity("");
-        }
-      });
-    </script>
+    <script src="./js/donate.js"></script>
+   
   </body>
 </html>
