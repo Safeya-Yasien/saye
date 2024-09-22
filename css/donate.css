@@ -1,124 +1,130 @@
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f4;
 }
 
 .landing {
-    position: relative;
-    background: url('../assets/imgs/donate/landing-bg.jpg') center center/cover no-repeat;
-    height: 50vh;
-    color: #fff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: relative;
+  background: url("../assets/imgs/donate/landing-bg.jpg") center center/cover
+    no-repeat;
+  height: 50vh;
+  color: var(--white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .contant {
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .text h2 {
-    font-size: 36px;
+  font-size: 36px;
 }
 
 .text p {
-    font-size: 18px;
-    margin-bottom: 20px;
+  font-size: 18px;
+  margin-bottom: 20px;
 }
 
 .main-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 18px;
-    cursor: pointer;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
 }
 .donate {
-    background-image: url('../assets/imgs/donate/bg.png'); /* Adjust the path to your image */
-    background-size: cover; /* Ensures the image covers the entire container */
-    background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /* Prevents the image from repeating */
-    padding: 20px; /* Adds padding inside the container */
-    border-radius: 10px; /* Optional: Adds rounded corners to the container */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to make it stand out */
-    color: #fff; /* Changes the text color to white for better contrast */
+  background-image: url("../assets/imgs/donate/bg.png"); /* Adjust the path to your image */
+  background-size: cover; /* Ensures the image covers the entire container */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  padding: 20px; /* Adds padding inside the container */
+  border-radius: 10px; /* Optional: Adds rounded corners to the container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow to make it stand out */
+  color: #fff; /* Changes the text color to white for better contrast */
 }
 
 .donate-plan {
-    margin: 20px 0;
-    text-align: center;
+  margin: 20px 0;
+  text-align: center;
 }
 
 .donate-plan button {
-    width: 100%;
-    padding: 15px;
-    margin-bottom: 10px;
-    font-size: 16px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    cursor: pointer;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  cursor: pointer;
 }
 
 .active {
-    background-color: #28a745;
-    color: white;
+  background-color: #28a745;
+  color: white;
 }
 
 .prices-group {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 20px;
 }
 
 .prices-group label {
-    font-size: 18px;
-    background-color: #f8f9fa;
-    padding: 10px 20px;
-    border-radius: 5px;
-    cursor: pointer;
+  font-size: 18px;
+  background-color: #f8f9fa;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: var(--black-color);
+}
+.donation-amount{
+    color: var(--black-color);
+
 }
 
 .donation-form {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin: 20px auto;
-    max-width: 600px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 20px auto;
+  max-width: 600px;
 }
 
 .donation-form label {
-    font-weight: bold;
-    margin-bottom: 5px;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
 .submit-btn {
-    background-color: #28a745;
-    color: white;
-    padding: 10px;
-    font-size: 18px;
-    width: 100%;
-    border: none;
-    border-radius: 5px;
+  background-color: #28a745;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
 }
 
 .submit-btn:hover {
-    background-color: #218838;
+  background-color: #218838;
 }
-.donate-frequency:hover{
-    background-color: #218838;
-    color: #fff;
+.donate-frequency:hover {
+  background-color: #218838;
+  color: #fff;
 }
