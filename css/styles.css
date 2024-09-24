@@ -105,40 +105,14 @@ img {
   }
 }
 
-/* .scroller {
-  width: 100%;
-  overflow: hidden;
-  .scroller_inner {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 30px;
-    animation: scroll 20s linear infinite;
-  }
-
-  img {
-    width: 150px;
-    height: 100px;
-    object-fit: contain;
-  }
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-} */
-
 .counter-area {
   padding: 50px 0;
-  background-color: var(--bg-green-color);
   margin-top: 50px;
   .single-counter {
     text-align: center;
     padding: 60px 0;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    border: 1px solid #80808017;
     img {
       background-color: #88d66c;
       padding: 20px;
@@ -158,6 +132,10 @@ img {
       font-weight: 400;
       font-size: 20px;
       color: var(--black-color);
+    }
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
     }
   }
 }
@@ -262,6 +240,33 @@ img {
 
     .testimonials-wrapper {
       gap: 15px;
+    }
+  }
+}
+
+.volunteer-registration {
+  p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  ol {
+    margin-left: 20px;
+    padding-left: 20px;
+    li {
+      margin-bottom: 15px;
+      font-size: 1.1rem;
+      line-height: 1.5;
+    }
+  }
+  @media (max-width: 768px) {
+    .section-title {
+      font-size: 2rem;
+    }
+
+    .volunteer-benefits li,
+    .volunteer-registration li {
+      font-size: 1rem;
     }
   }
 }
