@@ -73,7 +73,23 @@ img {
   }
 }
 
-.scroller {
+.slick {
+  .slick-list {
+    text-align: center;
+  }
+  .slick-track {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 50px;
+  }
+  img {
+    width: 100px !important;
+    height: auto;
+  }
+}
+
+/* .scroller {
   width: 100%;
   overflow: hidden;
   .scroller_inner {
@@ -98,7 +114,7 @@ img {
   100% {
     transform: translateX(-100%);
   }
-}
+} */
 
 .counter-area {
   padding: 50px 0;
