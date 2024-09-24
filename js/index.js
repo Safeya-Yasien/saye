@@ -1,19 +1,11 @@
 $(document).ready(function () {
   $(".slick").slick({
-    infinite: true,
-    speed: 100,
-    slidesToShow: 1,
-    centerMode: true,
-    variableWidth: true,
-    rtl: true,
+    slidesToShow: 5,
+    slidesToScroll: 1,
     autoplay: true,
+    autoplaySpeed: 2000,
+    rtl: true,
+    centerMode: false,
+    arrows: false,
   });
 });
-
-// $(".your-class").slick({
-//   slidesToShow: 3,
-//   autoplay: true,
-//   autoplaySpeed: 2000,
-//   dots: true,
-//   rtl: true, // Enable RTL
-// });
