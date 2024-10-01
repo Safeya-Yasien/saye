@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="ar">
+<html lang="ar" dir="rtl">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sayee</title>
+
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -22,9 +23,21 @@
       rel="stylesheet"
     />
 
+    <!-- slick -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
+      integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
+      integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
   </head>
   <body>
@@ -191,17 +204,29 @@
       </div>
     </section>
 
-    <div class="scroller">
-      <div class="scroller_inner">
-        <img src="assets/imgs/scroller_logos/logo_1.svg" alt="Logo 1" />
-        <img src="assets/imgs/scroller_logos/logo_2.svg" alt="Logo 2" />
-        <img src="assets/imgs/scroller_logos/logo_3.svg" alt="Logo 3" />
-        <img src="assets/imgs/scroller_logos/logo_4.svg" alt="Logo 4" />
-        <img src="assets/imgs/scroller_logos/logo_5.svg" alt="Logo 5" />
-        <img src="assets/imgs/scroller_logos/logo_6.svg" alt="Logo 6" />
-        <img src="assets/imgs/scroller_logos/logo_7.svg" alt="Logo 7" />
-        <img src="assets/imgs/scroller_logos/logo_8.svg" alt="Logo 8" />
-      </div>
+    <div class="slick">
+      <img src="assets/imgs/scroller_logos/logo_1.svg" alt="Logo 1" />
+      <img src="assets/imgs/scroller_logos/logo_2.svg" alt="Logo 2" />
+      <img src="assets/imgs/scroller_logos/logo_3.svg" alt="Logo 3" />
+      <img src="assets/imgs/scroller_logos/logo_4.svg" alt="Logo 4" />
+      <img src="assets/imgs/scroller_logos/logo_5.svg" alt="Logo 5" />
+      <img src="assets/imgs/scroller_logos/logo_6.svg" alt="Logo 6" />
+      <img src="assets/imgs/scroller_logos/logo_7.svg" alt="Logo 7" />
+      <img src="assets/imgs/scroller_logos/logo_8.svg" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_9.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_10.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_11.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_12.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_13.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_14.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_15.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_16.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_17.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_18.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_19.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_20.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_21.png" alt="Logo 8" />
+      <img src="assets/imgs/scroller_logos/logo_22.jpg" alt="Logo 8" />
     </div>
 
     <section class="testimonials section-padding">
@@ -252,6 +277,27 @@
             <span>مستفيد</span>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="volunteer-registration section-padding">
+      <div class="container">
+        <h2 class="section-title mb-5 text-center">كيف تصبح متطوعًا</h2>
+        <p>للانضمام إلينا كمتطوع، يرجى اتباع الخطوات التالية:</p>
+        <ol>
+          <li>
+            ملء
+            <a
+              href="#"
+              style="text-decoration: underline; color: inherit; color: blue"
+              >نموذج التسجيل</a
+            >
+            المتاح على موقعنا.
+          </li>
+          <li>الانتظار لتلقي دعوة لمقابلة أو دورة تدريبية.</li>
+          <li>حضور الدورة التدريبية والتعرف على المزيد عن الفرص المتاحة.</li>
+          <li>البدء في العمل والمشاركة في الأنشطة التطوعية.</li>
+        </ol>
       </div>
     </section>
 
@@ -377,8 +423,29 @@
       </div>
     </footer>
 
-    <script src="js/bootstrap.min.js"></script>
+    <!-- slick -->
 
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.5.2/jquery-migrate.min.js"
+      integrity="sha512-BzvgYEoHXuphX+g7B/laemJGYFdrq4fTKEo+B3PurSxstMZtwu28FHkPKXu6dSBCzbUWqz/rMv755nUwhjQypw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
+      integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/index.js"></script>
+    <!-- slick -->
   </body>
 </html>

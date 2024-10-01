@@ -29,30 +29,5 @@
   }
 }
 
-.volunteer-registration {
-  p {
-    font-size: 1.1rem;
-    margin-bottom: 20px;
-    line-height: 1.5;
-  }
-  ol {
-    margin-left: 20px;
-    padding-left: 20px;
-    li {
-      margin-bottom: 15px;
-      font-size: 1.1rem;
-      line-height: 1.5;
-    }
-  }
-}
 
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
 
-  .volunteer-benefits li,
-  .volunteer-registration li {
-    font-size: 1rem;
-  }
-}
