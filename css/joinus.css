@@ -1,0 +1,180 @@
+/* إعدادات عامة */
+body {
+    color: #444;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* تحسين تباعد الأسطر */
+}
+
+h2 {
+    margin: 15px 0; /* تقليل الهامش العمودي */
+    padding: 10px;
+    color: #0f4604;
+}
+
+/* قسم الهيرو */
+.landing {
+    position: relative;
+    background-image: url('../assets/imgs/joinus/amigos-grupo-unidad.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    z-index: 2;
+}
+
+/* قسم المزايا، النموذج والأسئلة الشائعة */
+.features, .form, .FAQ {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.features .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-bottom: 30px;
+    transition: transform 0.3s; /* تأثير تكبير البطاقة */
+}
+
+.features .card:hover {
+    transform: scale(1.05); /* تكبير عند التمرير */
+}
+
+/* قسم الأسئلة الشائعة */
+.faq-container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.faq-item {
+    background-color: #fff;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    cursor: grab;
+}
+.faq-item.dragging {
+    opacity: 0.5;
+    border: 2px dashed #007bff;
+}
+
+.faq-item:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* تأثير عند التمرير */
+}
+
+/* قسم وسائل التواصل الاجتماعي */
+.social-media-section {
+    background-image: url('../assets/imgs/joinus/images\ \(1\).jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+    position: relative;
+}
+
+.social-media-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(5, 83, 5, 0.5);
+    z-index: 1; /* وضعه خلف المحتوى */
+}
+
+.social-media-section h1 {
+    position: relative;
+    z-index: 2; /* وضعه أمام الطبقة الخضراء */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 2; /* وضع الأيقونات أمام الطبقة الخضراء */
+}
+
+/* تحسينات على النموذج */
+.form {
+    background-color: #f9f9f9; /* لون الخلفية */
+    border-radius: 10px; /* زوايا مدورة */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف */
+    margin: 20px 0; /* مساحة حول قسم النموذج */
+    text-align: right; /* محاذاة النص إلى اليمين */
+    padding: 20px; /* إضافة مساحة داخلية */
+}
+
+.form h2 {
+    margin-bottom: 30px; /* مساحة أسفل العنوان */
+    font-size: 24px; /* حجم الخط للعناوين */
+    color: #333; /* لون نص العناوين */
+}
+
+/* نمط حقول النموذج */
+.form .form-control {
+    border: 1px solid #ccc; /* حدود خفيفة */
+    border-radius: 5px; /* زوايا مدورة للحقول */
+    transition: border-color 0.3s; /* انتقال سلس للون الحدود */
+}
+
+.form .form-control:focus {
+    border-color: rgb(29, 109, 14); /* لون الحدود عند التركيز */
+    box-shadow: 0 0 5px rgba(29, 109, 14, 0.5); /* تأثير توهج عند التركيز */
+}
+
+.form .form-label {
+    text-align: right; /* محاذاة النص إلى اليمين */
+    margin-bottom: 10px; /* مساحة أسفل التسمية */
+    font-weight: bold; /* خطوط غامقة للتسميات */
+}
+
+.form button {
+    background-color: #046727; /* لون خلفية الزر */
+    border: none; /* بدون حدود */
+    color: white; /* لون النص */
+    padding: 12px 20px; /* مساحة داخلية للزر */
+    border-radius: 5px; /* زوايا مدورة للزر */
+    font-size: 16px; /* حجم خط الزر */
+    cursor: pointer; /* شكل المؤشر عند المرور */
+    transition: background-color 0.3s; /* انتقال سلس للون الخلفية */
+    margin-top: 10px; /* مساحة أعلى الزر */
+}
+
+.form button:hover {
+    background-color: #034f1e; /* لون الزر عند التمرير */
+}
+
+/* تحسينات على المسافات */
+.mb-3 {
+    text-align: right; /* محاذاة الحقول إلى اليمين */
+    margin-bottom: 20px; /* زيادة المساحة بين حقول النموذج */
+}
+.fab{
+color: #fff;    
+}
+.fab:hover{
+    transform: scale(1.05); /* تكبير عند التمرير */
+
+}
