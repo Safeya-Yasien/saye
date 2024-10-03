@@ -8,4 +8,11 @@ $(document).ready(function () {
     centerMode: false,
     arrows: false,
   });
+
+  $(".landing-slick").slick({
+    autoplay: true,
+    autoplaySpeed: 4000,
+    rtl: true,
+    arrows: true,
+  });
 });
