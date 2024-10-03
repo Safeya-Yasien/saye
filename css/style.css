@@ -1,0 +1,15 @@
+.up{
+    position: fixed;
+    bottom: 10px;
+    right: 50px; 
+    display: none;
+    border-radius: 5px; 
+    padding: 5px; 
+    cursor: pointer; 
+    z-index: 1000;
+    
+}
+
+.up.show{
+    display:block;
+}
