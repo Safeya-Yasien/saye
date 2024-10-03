@@ -31,14 +31,14 @@ jQuery لتبسيط التفاعل مع عناصر DOM
 
 نرحب بمساهماتكم لتحسين الموقع وإضافة ميزات جديدة. إذا كنت ترغب في المساهمة، يرجى اتباع الخطوات التالية:
 
-1- Fork the repository.
-2- Create a new branch for your changes
+1- Fork the repository.<br>
+2- Create a new branch for your changes<br>
 ```
 git checkout -b feature/new-feature
 ```
-3- Make your changes to the project.
+3- Make your changes to the project.<br>
 4- Push your changes to the repository:
 ```
 git push origin feature/new-feature
 ```
-5- Open a Pull Request to review the changes.
+5- Open a Pull Request to review the changes.<br>
