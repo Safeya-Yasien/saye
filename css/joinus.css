@@ -1,21 +1,19 @@
 /* إعدادات عامة */
 body {
     color: #444;
-    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 300;
     margin: 0;
     padding: 0;
-    line-height: 1.6; /* تحسين تباعد الأسطر */
+    line-height: 1.6;
 }
 
 h2 {
-    margin: 15px 0; /* تقليل الهامش العمودي */
+    margin: 15px 0; 
     padding: 10px;
     color: #0f4604;
 }
 
-/* قسم الهيرو */
 .landing {
     position: relative;
     background-image: url('../assets/imgs/joinus/amigos-grupo-unidad.jpg');
@@ -52,11 +50,11 @@ h2 {
     justify-content: space-between;
     height: 100%;
     margin-bottom: 30px;
-    transition: transform 0.3s; /* تأثير تكبير البطاقة */
+    transition: transform 0.3s;
 }
 
 .features .card:hover {
-    transform: scale(1.05); /* تكبير عند التمرير */
+    transform: scale(1.05); 
 }
 
 /* قسم الأسئلة الشائعة */
@@ -78,7 +76,7 @@ h2 {
 }
 
 .faq-item:hover {
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* تأثير عند التمرير */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 /* قسم وسائل التواصل الاجتماعي */
