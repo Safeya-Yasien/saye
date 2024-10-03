@@ -74,15 +74,15 @@ h2 {
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
-/* قسم وسائل التواصل الاجتماعي */
 .social-media-section {
-  background-image: url("../assets/imgs/joinus/images\ \(1\).jpeg");
+  background-image: url("../assets/imgs/joinus/images (1).jpeg");
   background-size: cover;
   background-position: center;
-  color: white;
+  color: var(--white-color);
   text-align: center;
-  padding: 50px 0;
+  padding: 30px 0;
   position: relative;
+  margin-bottom: 50px;
 }
 
 .social-media-section .overlay {
@@ -91,13 +91,13 @@ h2 {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(5, 83, 5, 0.5);
-  z-index: 1; /* وضعه خلف المحتوى */
+  background-color: rgba(0, 0, 0, 70%);
+  z-index: 1;
 }
 
 .social-media-section h1 {
   position: relative;
-  z-index: 2; /* وضعه أمام الطبقة الخضراء */
+  z-index: 2;
 }
 
 .social-icons {
@@ -106,53 +106,54 @@ h2 {
   gap: 30px;
   flex-wrap: wrap;
   position: relative;
-  z-index: 2; /* وضع الأيقونات أمام الطبقة الخضراء */
+  z-index: 2;
+  a {
+    font-size: 30px;
+  }
 }
 
-/* تحسينات على النموذج */
 .form {
-  background-color: #f9f9f9; /* لون الخلفية */
-  border-radius: 10px; /* زوايا مدورة */
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* ظل خفيف */
-  margin: 20px 0; /* مساحة حول قسم النموذج */
-  text-align: right; /* محاذاة النص إلى اليمين */
-  padding: 20px; /* إضافة مساحة داخلية */
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 20px 0;
+  text-align: right;
+  padding: 20px;
 }
 
 .form h2 {
-  margin-bottom: 30px; /* مساحة أسفل العنوان */
-  font-size: 24px; /* حجم الخط للعناوين */
-  color: #333; /* لون نص العناوين */
+  margin-bottom: 30px;
+  font-size: 24px;
+  color: #333;
 }
 
-/* نمط حقول النموذج */
 .form .form-control {
-  border: 1px solid #ccc; /* حدود خفيفة */
-  border-radius: 5px; /* زوايا مدورة للحقول */
-  transition: border-color 0.3s; /* انتقال سلس للون الحدود */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  transition: border-color 0.3s;
 }
 
 .form .form-control:focus {
-  border-color: rgb(29, 109, 14); /* لون الحدود عند التركيز */
-  box-shadow: 0 0 5px rgba(29, 109, 14, 0.5); /* تأثير توهج عند التركيز */
+  border-color: rgb(29, 109, 14);
+  box-shadow: 0 0 5px rgba(29, 109, 14, 0.5);
 }
 
 .form .form-label {
-  text-align: right; /* محاذاة النص إلى اليمين */
-  margin-bottom: 10px; /* مساحة أسفل التسمية */
-  font-weight: bold; /* خطوط غامقة للتسميات */
+  text-align: right;
+  margin-bottom: 10px;
+  font-weight: bold;
 }
 
 .form button {
-  background-color: #046727; /* لون خلفية الزر */
-  border: none; /* بدون حدود */
-  color: white; /* لون النص */
-  padding: 12px 20px; /* مساحة داخلية للزر */
-  border-radius: 5px; /* زوايا مدورة للزر */
-  font-size: 16px; /* حجم خط الزر */
-  cursor: pointer; /* شكل المؤشر عند المرور */
-  transition: background-color 0.3s; /* انتقال سلس للون الخلفية */
-  margin-top: 10px; /* مساحة أعلى الزر */
+  background-color: #046727;
+  border: none;
+  color: var(--white-color);
+  padding: 12px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
 }
 
 .form button:hover {
