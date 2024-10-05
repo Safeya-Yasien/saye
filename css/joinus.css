@@ -51,26 +51,34 @@ h2 {
   transform: scale(1.05);
 }
 
-/* قسم الأسئلة الشائعة */
-.faq-container {
-  max-width: 600px;
-  margin: 0 auto;
-}
+
+
 .faq-item {
-  background-color: #fff;
+  border-bottom: 1px solid #ddd;
   padding: 15px;
-  margin-bottom: 10px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  cursor: grab;
-}
-.faq-item.dragging {
-  opacity: 0.5;
-  border: 2px dashed #007bff;
+  cursor: pointer;
+  background-color: white;
+  transition: background-color 0.3s;
 }
 
 .faq-item:hover {
-  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.faq-question {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: right;
+}
+
+.faq-answer {
+  padding-top: 10px;
+  line-height: 1.6;
+  text-align: right;
+}
+
+.collapse {
+  transition: height 0.5s ease;
 }
 
 .social-media-section {
@@ -159,17 +167,16 @@ h2 {
 }
 
 .form button:hover {
-  background-color: #034f1e; /* لون الزر عند التمرير */
+  background-color: #034f1e; 
 }
 
-/* تحسينات على المسافات */
 .mb-3 {
-  text-align: right; /* محاذاة الحقول إلى اليمين */
-  margin-bottom: 20px; /* زيادة المساحة بين حقول النموذج */
+  text-align: right; 
+  margin-bottom: 20px; 
 }
 .fab {
   color: #fff;
 }
 .fab:hover {
-  transform: scale(1.05); /* تكبير عند التمرير */
+  transform: scale(1.05); 
 }
