@@ -55,6 +55,6 @@ Meet the amazing team behind **سعى**:
 | Name                   | Role                                | LinkedIn                                                         | GitHub                                     |
 | ---------------------- | ----------------------------------- | ---------------------------------------------------------------- | ------------------------------------------ |
 | Merihan wahed          | Frontend Developer                  | [LinkedIn](https://www.linkedin.com/in/meryhan-wahed-04a988250/) | [GitHub](https://github.com/Meryhanwahed)  |
-| Team Member 2          | Frontend Developer                  | [LinkedIn](https://www.linkedin.com/in/arwa-gamal-7955482a3/)    | [GitHub](https://github.com/Arwaa-Gamall)  |
+| Arwa Gamal             | Frontend Developer                  | [LinkedIn](https://www.linkedin.com/in/arwa-gamal-7955482a3/)    | [GitHub](https://github.com/Arwaa-Gamall)  |
 | Safeya Yasien          | Frontend Designer                   | [LinkedIn](https://www.linkedin.com/in/safeya-yasien-2ba9b4260/) | [GitHub](https://github.com/Safeya-Yasien) |
 | Esraa Adel Ali Mohamed | UI/UX Designer & Frontend Developer | [LinkedIn](https://www.linkedin.com/in/esraa-adel-84685325b)     | [GitHub](https://github.com/esraaadel89)   |
