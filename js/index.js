@@ -30,3 +30,6 @@ span.onclick = function () {
     behavior: "smooth",
   });
 };
+
+AOS.init();
+twemoji.parse(document.body);

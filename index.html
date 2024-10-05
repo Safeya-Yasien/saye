@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/variables.css" />
     <link rel="stylesheet" href="css/styles.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
@@ -48,11 +49,7 @@
       >
         <div class="container-fluid">
           <a class="navbar-brand" href="/">
-            <img
-              src="assets/imgs/logo2.svg"
-              alt="logo"
-              width="70px"
-            />
+            <img src="assets/imgs/logo2.svg" alt="logo" width="70px" />
           </a>
           <button
             class="navbar-toggler"
@@ -162,6 +159,139 @@
         </div>
       </div>
     </section>
+
+    <section class="events section-padding" id="events">
+      <div class="container">
+        <div class="section-title mb-5 text-center">
+          <h2 class="section-title mb-4">فعالياتنا</h2>
+          <p>كن جزءًا من حملة تشجير، وامنح كوكبنا حياة جديدة</p>
+        </div>
+        <div class="row align-items-center">
+
+          <div class="col-12 col-lg-6">
+            <div class="events-txt">
+              <h3 class="mb-3">حملة التشجير</h3>
+              <p>
+                انضم إلينا في حملة التشجير التي تهدف إلى تعزيز المساحات الخضراء
+                والمساهمة في الحفاظ على البيئة. هذه المبادرة تهدف إلى غرس أشجار
+                جديدة في مناطق مختلفة لزيادة الوعي بأهمية الحفاظ على الطبيعة.
+              </p>
+              <a href="#" class="btn" onclick="openModal(1)">إعرف التفاصيل</a>
+            </div>
+          </div>
+
+
+          <div class="col-12 col-lg-6 mb-4 mb-lg-0">
+            <div>
+              <img
+                src="assets/imgs/homePage/tasger.jpeg"
+                alt="حملة تشجير"
+                loading="lazy"
+              />
+            </div>
+          </div>
+     
+        </div>
+      </div>
+    </section>
+
+
+
+    <div id="modal-det" class="modal-det">
+      <div class="modal-content-det">
+        <div id="modal-text-det"></div>
+        <button class="btn btn-success" onclick="openRegistrationModal()">
+          سجل الآن
+        </button>
+        <button class="btn" onclick="closeModal()">إغلاق</button>
+      </div>
+    </div>
+
+
+
+    <div id="registrationModal" class="modal-reg">
+      <div class="modal-content-reg">
+        <h5>سجل الآن</h5>
+        <form id="registrationForm">
+          <div class="form-group">
+            <label for="name">الاسم</label>
+            <input
+              type="text"
+              class="form-control"
+              id="name"
+              placeholder="ادخل اسمك"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">الايميل</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              placeholder="ادخل ايميلك"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="address">العنوان</label>
+            <input
+              type="text"
+              class="form-control"
+              id="address"
+              placeholder="ادخل عنوانك"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="age">السن</label>
+            <input
+              type="number"
+              class="form-control"
+              id="age"
+              placeholder="ادخل سنك"
+              required
+            />
+          </div>
+          <button type="submit" class="btn">إرسال</button>
+          <button type="button" class="btn" onclick="closeRegistrationModal()">
+            إغلاق
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div id="successModal" class="modal-success">
+      <div class="modal-content-success">
+        <h5>تم التسجيل بنجاح!😊</h5>
+        <p>شكرًا لك على التسجيل. سنقوم بالتواصل معك قريبًا.</p>
+        <button class="btn" onclick="closeSuccessModal()">إغلاق</button>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
     <section class="counter-area">
       <div class="container">
@@ -489,7 +619,8 @@
     ></script>
 
     <script src="js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="js/blog.js"></script>
     <script src="js/index.js"></script>
-    <!-- slick -->
   </body>
 </html>
