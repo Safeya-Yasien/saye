@@ -16,13 +16,14 @@ https://safeya-yasien.github.io/saye/
 ### 🛠️ التقنيات المستخدمة
 
 الواجهة الأمامية (Frontend):
+
 - HTML<br>
 - CSS<br>
 - JavaScript<br>
 - مكتبة Slick لتصميم شرائح الصور التفاعلية<br>
 - jQuery لتبسيط التفاعل مع عناصر DOM<br>
 - التصميم: استخدام تصميم بسيط وجذاب ليتناسب مع طبيعة الموقع التطوعي مع ألوان هادئة وأسلوب حديث.<br>
-📋 كيفية الاستخدام
+  📋 كيفية الاستخدام
 - تصفح الفرص: عند دخولك إلى الصفحة الرئيسية، ستظهر لك قائمة بالفرص المتاحة. يمكنك تصفية الفرص حسب المدينة أو المجال الذي ترغب بالتطوع فيه.<br>
 - التسجيل في الفرص: يمكنك التسجيل في أي فرصة عبر ملء النموذج المطلوب أو التواصل مع الجهة المنظمة مباشرة.<br>
 - التواصل مع المؤسسات: يوفر الموقع وسيلة للتواصل المباشر مع الجهات التي تنظم الأنشطة التطوعية للحصول على مزيد من التفاصيل.<br>
@@ -33,25 +34,27 @@ https://safeya-yasien.github.io/saye/
 
 1- Fork the repository.<br>
 2- Create a new branch for your changes<br>
+
 ```
 git checkout -b feature/new-feature
 ```
+
 3- Make your changes to the project.<br>
 4- Push your changes to the repository:
+
 ```
 git push origin feature/new-feature
 ```
-5- Open a Pull Request to review the changes.<br>
 
+5- Open a Pull Request to review the changes.<br>
 
 ## 👥 Team
 
 Meet the amazing team behind **سعى**:
 
-| Name           | Role                                   | LinkedIn                               | GitHub                                 |
-|----------------|----------------------------------------|----------------------------------------|----------------------------------------|
-| Merihan wahed  | Frontend Developer                     | [LinkedIn](https://www.linkedin.com/in/meryhan-wahed-04a988250/) | [GitHub](https://github.com/Meryhanwahed) |
-| Team Member 2  | Frontend Developer                     | [LinkedIn](https://www.linkedin.com/in/member2) | [GitHub](https://github.com/member2)  |
-| Safeya Yasien  | Frontend Designer                      | [LinkedIn](https://www.linkedin.com/in/safeya-yasien-2ba9b4260/) | [GitHub](https://github.com/Safeya-Yasien)  |
-| Team Member 3  | UI/UX Designer & Frontend Developer    | [LinkedIn](https://www.linkedin.com/in/member3) | [GitHub](https://github.com/member3)  |
-
+| Name                   | Role                                | LinkedIn                                                         | GitHub                                     |
+| ---------------------- | ----------------------------------- | ---------------------------------------------------------------- | ------------------------------------------ |
+| Merihan wahed          | Frontend Developer                  | [LinkedIn](https://www.linkedin.com/in/meryhan-wahed-04a988250/) | [GitHub](https://github.com/Meryhanwahed)  |
+| Team Member 2          | Frontend Developer                  | [LinkedIn](https://www.linkedin.com/in/member2)                  | [GitHub](https://github.com/member2)       |
+| Safeya Yasien          | Frontend Designer                   | [LinkedIn](https://www.linkedin.com/in/safeya-yasien-2ba9b4260/) | [GitHub](https://github.com/Safeya-Yasien) |
+| Esraa Adel Ali Mohamed | UI/UX Designer & Frontend Developer | [LinkedIn](https://www.linkedin.com/in/esraa-adel-84685325b)     | [GitHub](https://github.com/esraaadel89)   |
